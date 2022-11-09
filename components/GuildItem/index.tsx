@@ -11,7 +11,10 @@ export default function GuildItem({
 
   return (
     <div className={styles.guild_item}>
-      <img src={icon} alt={name} />
+      <picture>
+        <source src={icon} type="image/webp" />
+        <img src={icon} alt={name} />
+      </picture>
       <div className={styles.text}>
         <p>{name}</p>
         <span>{id}</span>

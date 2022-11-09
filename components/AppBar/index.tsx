@@ -11,7 +11,10 @@ export default function AppBar({ guild }: { guild: any }) {
           {guild ? (
             <>
               <p>Configuring {guild?.name}</p>
-              <img src={guild.icon} alt={guild?.name} />
+              <picture>
+                <source src={guild.icon} type="image/webp" />
+                <img src={guild.icon} alt={guild?.name} />
+              </picture>
             </>
           ) : (
             <p>Configuring ???</p>
