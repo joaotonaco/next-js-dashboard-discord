@@ -18,7 +18,6 @@ pnpm-lock.yaml
 pocketbase.exe
 pnpm-lock.yaml
 /pb_data/
-/app/(mocks)
 /.vscode/
 
 # misc
