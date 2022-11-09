@@ -15,7 +15,7 @@ pnpm-lock.yaml
 
 # production
 /build
-pocketback.exe
+pocketbase.exe
 pnpm-lock.yaml
 /pb_data/
 /app/(mocks)
