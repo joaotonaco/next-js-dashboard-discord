@@ -19,6 +19,7 @@ pocketbase.exe
 pnpm-lock.yaml
 /pb_data/
 /.vscode/
+*.zip
 
 # misc
 .DS_Store
