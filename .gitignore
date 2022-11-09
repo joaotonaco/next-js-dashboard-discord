@@ -17,8 +17,9 @@ pnpm-lock.yaml
 /build
 pocketback.exe
 pnpm-lock.yaml
-/pb_data
+/pb_data/
 /app/(mocks)
+/.vscode/
 
 # misc
 .DS_Store
