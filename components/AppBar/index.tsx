@@ -1,5 +1,4 @@
 import { IoArrowBack } from 'react-icons/io5';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './AppBar.module.css';
@@ -12,7 +11,7 @@ export default function AppBar({ guild }: { guild: any }) {
           {guild ? (
             <>
               <p>Configuring {guild?.name}</p>
-              <Image src={guild.icon} alt={guild?.name} />
+              <img src={guild.icon} alt={guild?.name} />
             </>
           ) : (
             <p>Configuring ???</p>
