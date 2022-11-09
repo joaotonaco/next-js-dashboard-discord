@@ -14,4 +14,14 @@ export const mockGuilds = [
     id: '974376362435543050',
     name: 'SMP de Criaaaa',
   },
+  {
+    icon: 'https://cdn.discordapp.com/icons/898377990906454016/edb9450948a8b495cb98c865b95793f2.webp?size=512',
+    id: '898377990906454016',
+    name: 'SquareCloud',
+  },
+  {
+    icon: 'https://cdn.discordapp.com/icons/773631621806817311/911846631b2d20f464545a8612c23be0.webp?size=96',
+    id: '773631621806817311',
+    name: 'Sync Lab 🧪',
+  },
 ];
