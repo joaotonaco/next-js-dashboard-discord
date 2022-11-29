@@ -38,7 +38,7 @@ function GuildConfiguration({ params }: { params: { id: string } }) {
           </span>
         </h1>
       </header>
-      <section className="w-3/4 mx-auto max-w-md">
+      <section className="w-3/4 mx-auto max-w-md animate-[fade-in_0.5s_ease]">
         <div className="flex flex-col items-center gap-2">
           <ConfigsItems.Category
             name="Channels"
