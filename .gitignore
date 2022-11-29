@@ -20,6 +20,7 @@ pnpm-lock.yaml
 /pb_data/
 /.vscode/
 *.zip
+/old/
 
 # misc
 .DS_Store
