@@ -22,7 +22,7 @@ function SideBar() {
 
       <nav
         className={
-          'fixed w-18 sm:block h-screen bg-neutral-850 z-20 transition-all ease-out duration-400 delay-200 ease-out overflow-auto no-scrollbar sm:translate-x-0' +
+          'fixed w-18 sm:block h-screen bg-neutral-850 z-20 transition-all ease-out duration-400 delay-200 overflow-auto no-scrollbar sm:translate-x-0' +
           (state
             ? ' translate-x-0 shadow-[0_0_10px_3px_rgb(0_0_0_/_0.2)]'
             : ' -translate-x-18')
