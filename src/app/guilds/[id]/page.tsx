@@ -27,7 +27,7 @@ function GuildConfiguration({ params }: { params: { id: string } }) {
 
   return (
     <div className="flex flex-col mx-auto items-start w-full gap-10">
-      <header className="px-10 py-5 flex flex-col sm:flex-row items-center gap-2 shadow-md w-full bg-neutral-750 justify-center sm:justify-start font-semibold text-[clamp(1.2rem,2vw+0.5rem,1.5rem)] leading-8 text-center">
+      <header className="px-10 py-4 flex flex-col sm:flex-row items-center gap-2 shadow-md w-full bg-neutral-750 justify-center sm:justify-start font-semibold text-[clamp(1.2rem,2vw+0.5rem,1.5rem)] leading-8 text-center">
         <GoGear size={30} />
         <h1>Configuring</h1>
         <p className="animate-[fade-in_0.5s_ease] bg-neutral-800 px-3 rounded-3xl py-1 line-clamp-1">
