@@ -13,7 +13,7 @@ function GuildsLayout({ children }: { children: React.ReactNode }) {
     <GuildContextProvider>
       <SideBarContextProvider>
         <div className="guilds-page_grid">
-          <div style={getArea('sidebar')} className="fixed sm:block">
+          <div style={getArea('sidebar')} className="z-50 fixed sm:block">
             <GuildsItems.SideBar />
           </div>
 

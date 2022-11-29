@@ -1,7 +1,6 @@
 'use client';
 
 import { DM_Sans } from '@next/font/google';
-import NextProgress from 'next-progress';
 import './globals.css';
 
 const font = DM_Sans({
@@ -22,12 +21,6 @@ function HomeLayout({ children }: { children: React.ReactNode }) {
         <title>Sync Station</title>
       </head>
       <body className={font.className}>
-        <NextProgress
-          color="#4852c5"
-          height="2px"
-          options={{ showSpinner: false }}
-        />
-        
         {children}
       </body>
     </html>
