@@ -71,7 +71,7 @@ module.exports = {
       },
       boxShadow: {
         'mini-dark-button': '4px 4px 5px #222222a9, -2px -2px 3px #3d3d3d5c',
-        'dark-button': '5px 5px 4px #202020a9, -4px -4px 6px #34343479',
+        'dark-button': '5px 5px 4px #222222a9, -4px -4px 4px #3d3d3d5c',
         'blurple-button': '0 0 10px #5865f2, 0 0 15px #444ebd',
         'plurple-button': '0 0 10px #8a4dd4, 0 0 15px #7541b4',
       },

@@ -11,11 +11,11 @@ function HomeButton({
 }) {
   return (
     <button
-      className={`group flex items-center justify-center relative py-3 overflow-hidden rounded-full bg-neutral-800 ${
+      className={`group flex items-center justify-center relative py-3 overflow-hidden rounded-4xl bg-neutral-800 ${
         color === 'blurple'
           ? 'hover:bg-blurple hover:shadow-blurple-button'
           : 'hover:bg-plurple hover:shadow-plurple-button'
-      } w-52 shadow-dark-button transition-all duration-300`}
+      } w-52 transition-all duration-300`}
     >
       <p
         className={`transition-all duration-400 ${

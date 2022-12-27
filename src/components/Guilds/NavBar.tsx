@@ -12,8 +12,8 @@ function NavBar() {
 
   return (
     <nav>
-      <div className="flex flex-col sm:w-full transition-transform duration-500">
-        <div className="flex items-center justify-start w-full h-[84px] bg-neutral-850 px-4 gap-4">
+      <div className="fixed flex flex-col sm:w-screen transition-transform duration-500">
+        <div className="flex items-center justify-start w-screen h-[84px] bg-neutral-850 px-4 gap-4">
           <button
             className="group rounded-full sm:hidden"
             onFocus={() => setState(true)}

@@ -16,10 +16,9 @@ function GuildItem({
     <Link
       href={`/guilds/${id}`}
       className={
-        'group block text-neutral-500 focus:outline-0 relative before:absolute before:w-2 before:h-4 before:bg-neutral-300 before:rounded-3xl before:z-30 before:top-1/2 before:-translate-y-1/2 before:-left-[0.95rem] before:transition-all before:duration-200 before:scale-50 before:opacity-0 hover:before:opacity-100 hover:before:scale-100 ' +
+        'group block text-neutral-500 focus:outline-0 relative before:absolute before:w-2 before:h-4 before:bg-neutral-300 before:rounded-3xl before:z-30 before:top-1/2 before:-translate-y-1/2 before:-left-[0.95rem] before:transition-all before:duration-200 before:scale-50 before:opacity-0 hover:before:opacity-100 hover:before:scale-100 no-highlight ' +
         (selected && 'before:opacity-100 before:scale-100 before:h-10')
       }
-      style={{ WebkitTapHighlightColor: 'transparent' }}
     >
       <img
         className={

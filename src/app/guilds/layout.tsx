@@ -1,5 +1,6 @@
 'use client';
 
+import { CategoryContextProvider } from '../../contexts/CategoryContext';
 import { SideBarContextProvider } from '../../contexts/SideBarContext';
 import { GuildContextProvider } from '../../contexts/GuildContext';
 import GuildsItems from '../../components/Guilds';
@@ -21,7 +22,9 @@ function GuildsLayout({ children }: { children: React.ReactNode }) {
             <GuildsItems.NavBar />
           </nav>
 
-          <main style={getArea('guild')}>{children}</main>
+          <CategoryContextProvider>
+            <main style={getArea('guild')}>{children}</main>
+          </CategoryContextProvider>
         </div>
       </SideBarContextProvider>
     </GuildContextProvider>

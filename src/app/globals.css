@@ -29,6 +29,10 @@
   display: none;
 }
 
+.no-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
+
 *,
 *::before,
 *::after {

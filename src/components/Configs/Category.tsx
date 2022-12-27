@@ -1,30 +1,34 @@
+import Link from 'next/link';
 import { IconType } from 'react-icons';
 
 function Category({
-  children,
   name,
-  Icon,
-  className,
+  icon: Icon,
+  selected,
+  guildId,
 }: {
-  children: React.ReactNode;
   name: string;
-  Icon: IconType;
-  className?: string;
+  icon: IconType;
+  selected?: boolean;
+  guildId?: string;
 }) {
   return (
-    <div
-      className={
-        'w-full flex flex-col gap-3 border-t border-neutral-600 border-opacity-30 pt-5 mb-5' +
-        ' ' +
-        className
-      }
+    <Link
+      href={guildId ? `/guilds/${guildId}/${name.toLowerCase()}` : `/guilds`}
     >
-      <div className="flex text-[clamp(1rem,2vw+0.5rem,1.25rem)] font-bold items-center gap-2">
-        <Icon size={30} />
+      <button
+        className={
+          'flex text-[clamp(0.6rem,2vw+0.5rem,0.9rem)] font-bold items-center gap-1.5 py-1 px-3 rounded-3xl border border-opacity-25 hover:bg-neutral-650 cursor-pointer' +
+          ' ' +
+          (selected
+            ? 'text-neutral-200 border-neutral-200 bg-neutral-650 transition-all duration-300'
+            : 'text-neutral-400 border-neutral-500 bg-neutral-750')
+        }
+      >
+        <Icon size={20} />
         <h2>{name}</h2>
-      </div>
-      <div className="grid grid-cols-2 min-[400px]:grid-cols-3 gap-2 w-full">{children}</div>
-    </div>
+      </button>
+    </Link>
   );
 }
 

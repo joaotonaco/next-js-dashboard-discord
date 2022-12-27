@@ -9,8 +9,8 @@ function Home() {
 
       <HomeItems.Header />
 
-      <section className="flex flex-col items-center w-full text-sm font-bold gap-6">
-        <Link href="/guilds" style={{ WebkitTapHighlightColor: 'transparent' }}>
+      <section className="flex flex-col items-center w-full text-sm font-bold gap-6 no-highlight">
+        <Link href="/guilds">
           <HomeItems.Button
             name="Login with Discord"
             color="blurple"
@@ -19,7 +19,7 @@ function Home() {
           />
         </Link>
 
-        <Link href="" style={{ WebkitTapHighlightColor: 'transparent' }}>
+        <Link href="" className='no-highlight'>
           <HomeItems.Button
             name="Support Server"
             color="plurple"
