@@ -17,8 +17,8 @@ function LogoBorder({ className, r }: { className?: string; r?: any }) {
     >
       <defs>
         <linearGradient id="bg" x1="50%" y1="0%" x2="50%" y2="100%">
-          <stop offset="20%" stop-color="#4852c5" />
-          <stop offset="100%" stop-color="#9a35bb" />
+          <stop offset="20%" stopColor="#4852c5" />
+          <stop offset="100%" stopColor="#9a35bb" />
           <animateTransform
             attributeName="gradientTransform"
             type="rotate"

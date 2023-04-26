@@ -4,25 +4,21 @@ import { DM_Sans } from '@next/font/google';
 import './globals.css';
 
 const font = DM_Sans({
+  subsets: ['latin'],
   weight: ['400', '500', '700'],
+  display: 'swap',
 });
 
 function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="A modern Discord Bot" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-        />
         <title>Sync Station</title>
       </head>
-      <body className={font.className}>
-        {children}
-      </body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
